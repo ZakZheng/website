@@ -1,12 +1,12 @@
-import { withRouter } from 'next/router';
-import styled from 'styled-components';
+import { withRouter } from "next/router";
+import styled from "styled-components";
+import { connect } from "react-redux";
+import { IStoreState, add } from "../store/store";
+
 const Title = styled.span`
-  font-size: 50px;
+  font-size: 30px;
   color: ${({ theme }) => theme.colors.primary};
 `;
-
-import { connect } from 'react-redux';
-import { IStoreState, add } from '../store/store';
 
 const A = ({ router, name, time, count, addCount }) => {
   return (
@@ -24,7 +24,7 @@ const A = ({ router, name, time, count, addCount }) => {
 A.getInitialProps = async e => {
   console.log({ e });
 
-  const moment = (await import('moment')).default;
+  const moment = (await import("moment")).default;
   const promise = new Promise(resolve => {
     setTimeout(() => {
       resolve({
@@ -38,9 +38,9 @@ A.getInitialProps = async e => {
 
 export default connect(
   (state: IStoreState) => ({
-    count: state.count,
+    count: state.count
   }),
   dispatch => ({
-    addCount: (num: number) => dispatch(add(num)),
-  }),
+    addCount: (num: number) => dispatch(add(num))
+  })
 )(withRouter(A));
