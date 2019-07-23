@@ -28,8 +28,8 @@ A.getInitialProps = async e => {
   const promise = new Promise(resolve => {
     setTimeout(() => {
       resolve({
-        name: "zk",
-        time: moment(Date.now() - 60 * 1000).fromNow()
+        name: 'zkaa',
+        time: moment(Date.now() - 60 * 1000).fromNow(),
       });
     }, 1000);
   });
