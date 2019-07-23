@@ -1,0 +1,32 @@
+{
+  "name": "create-next-example-app",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@types/node": "^12.6.2",
+    "@types/react-redux": "^7.1.1",
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^3.20.3",
+    "babel-plugin-import": "^1.12.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "ioredis": "^4.11.2",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "moment": "^2.24.0",
+    "next": "^9.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.49",
+    "@types/react": "^16.8.23",
+    "@types/styled-components": "^4.1.18",
+    "typescript": "^3.5.3"
+  }
+}
